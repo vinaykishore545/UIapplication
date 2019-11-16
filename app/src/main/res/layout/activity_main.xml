@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container_layout"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        tools:ignore="UseCompoundDrawables">
+       <ImageView
+
+            android:src="@drawable/ic_automobile"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_100sdp"
+           tools:ignore="ContentDescription" />
+        <TextView
+            android:textSize="@dimen/_20sdp"
+            android:layout_gravity="center"
+            android:text="DRYVR"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText" />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <EditText
+            android:inputType="number"
+            android:id="@+id/number"
+            android:textColor="#000"
+            android:hint="Mobile Number"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:paddingStart="@dimen/_60sdp"
+            android:textSize="@dimen/_15sdp"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:background="@drawable/button"
+            tools:ignore="Autofill,HardcodedText,RtlSymmetry" />
+        <EditText
+            android:id="@+id/password"
+            android:inputType="numberPassword"
+            android:textColor="#000"
+            android:drawableStart="@drawable/lock"
+            android:hint="password"
+            android:drawablePadding="@dimen/_10ssp"
+            android:paddingStart="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/_15sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:background="@drawable/button"
+            tools:ignore="Autofill,HardcodedText,RtlSymmetry" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <Button
+            android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+            android:background="@drawable/button1"
+            android:layout_marginTop="@dimen/_30sdp"
+           android:layout_gravity="center"
+            android:textSize="@dimen/_15sdp"
+            android:text="sign in"
+            android:id="@+id/sign"
+            android:drawablePadding="@dimen/_30sdp"
+            android:layout_width="wrap_content"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_30sdp"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+        <TextView
+            android:textColor="#000"
+            android:textSize="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10ssp"
+            android:layout_gravity="center"
+            android:text="create a account? sign up?"
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
